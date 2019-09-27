@@ -39,9 +39,13 @@ for file in os.listdir(dir_path):
     group_delim = filename.find("group")
     delimiter = filename.find('_')
 
+    # Skip files if they do not contain the correct filename format
+    if (delimiter == -1 || section_delim == -1 || group_delim == -1):
+    	continue
+
     # get section and group numbers
     section = int(filename[(section_delim + 7):group_delim])
-    group = int(filename[(group_delim + 5):under_delim])
+    group = int(filename[(group_delim + 5):delimiter])
 
     # Get filetype
     delimiter = filename.rfind('.')
