@@ -40,7 +40,7 @@ for file in os.listdir(dir_path):
     delimiter = filename.find('_')
 
     # Skip files if they do not contain the correct filename format
-    if (delimiter == -1 || section_delim == -1 || group_delim == -1):
+    if (delimiter == -1 or section_delim == -1 or group_delim == -1):
     	continue
 
     # get section and group numbers
