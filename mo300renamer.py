@@ -55,4 +55,8 @@ for file in os.listdir(dir_path):
     for row in code_interpreter:
         if section == int(row[0]) and group == int(row[1]):
             new_filename = str(row[2]) + filetype
-            os.rename(filename, new_filename)
+            try:
+                os.rename(filename, new_filename)
+            except:
+                new_filename = str(row[2]) + '_1' + filetype
+                os.rename(filename, new_filename)

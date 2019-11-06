@@ -50,4 +50,8 @@ for file in os.listdir(dir_path):
   for row in code_interpreter:
     if studentName == row[0]:
     	new_filename = str(row[1]) + filetype
-    	os.rename(filename, new_filename)
+        try:
+            os.rename(filename, new_filename)
+        except:
+            new_filename = str(row[1]) + '_1' + filetype
+            os.rename(filename, new_filename)
