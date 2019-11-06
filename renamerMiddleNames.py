@@ -4,9 +4,9 @@
 # Revised on 11.5.19                                                           #
 # Usage: Put both this file, and a csv named 'mo319codes.csv' into folder with #
 #        all files to rename. Files should follow the format:                  #
-#        <lastname,firstname>[middlename]_*.<filetype>												 #
-#				 This program accounts for changing names and simply searches for the  #
-#				 string <lastnamefirstname>									                           #
+#        <lastname,firstname>[middlename]_*.<filetype>                         #
+#        This program accounts for changing names and simply searches for the  #
+#        string <lastnamefirstname>                                            #
 #                                                                              #
 # CSV Formatting: No headers or other extraneous data should be included       #
 # Row format: <lastname><firstname>,<New assignment name>                      #
