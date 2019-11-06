@@ -1,7 +1,7 @@
 ################################################################################
 # Renamer for MO 319                                                           #
 # Author: Joseph Howard | github.com/jopahoward                                #
-# Revised on 9.18.19                                                           #
+# Revised on 11.5.19                                                           #
 # Usage: Put both this file, and a csv named 'mo319codes.csv' into folder with #
 #        all files to rename. Files should follow the format:                  #
 #        <lastname,firstname>_*.<filetype>                                     #
